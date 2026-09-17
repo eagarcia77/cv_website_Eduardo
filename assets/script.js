@@ -1,11 +1,40 @@
-const education=document.getElementById('educacion');
-if(education){
-  education.innerHTML=`<div class="wrap two-col"><div><p class="section-kicker" data-es="Preparación académica" data-en="Academic preparation">Preparación académica</p><h2 data-es="Educación" data-en="Education">Educación</h2><h3 data-es="Doctorado en Educación" data-en="Doctor of Education">Doctorado en Educación</h3><p data-es="Nova Southeastern University, Abraham S. Fischler College of Education. Major: Education; concentración en Tecnología Instruccional y Educación a Distancia. Grado otorgado el 31 de diciembre de 2025. GPA 4.00." data-en="Nova Southeastern University, Abraham S. Fischler College of Education. Major: Education; concentration in Instructional Technology and Distance Education. Degree awarded December 31, 2025. GPA 4.00.">Nova Southeastern University, Abraham S. Fischler College of Education. Major: Education; concentración en Tecnología Instruccional y Educación a Distancia. Grado otorgado el 31 de diciembre de 2025. GPA 4.00.</p><h3 data-es="Maestría en Artes — Computación Educativa" data-en="Master of Arts — Educational Computing">Maestría en Artes — Computación Educativa</h3><p data-es="Universidad Interamericana de Puerto Rico, Recinto Metropolitano. Grado otorgado el 16 de diciembre de 2006. 39 créditos; GPA 3.63." data-en="Inter American University of Puerto Rico, Metropolitan Campus. Degree awarded December 16, 2006. 39 credits; GPA 3.63.">Universidad Interamericana de Puerto Rico, Recinto Metropolitano. Grado otorgado el 16 de diciembre de 2006. 39 créditos; GPA 3.63.</p><h3 data-es="Bachillerato en Administración de Empresas" data-en="Bachelor of Business Administration">Bachillerato en Administración de Empresas</h3><p data-es="Sistemas Computadorizados de Información Gerencial, Universidad Interamericana de Puerto Rico, Recinto de Ponce. Grado otorgado el 19 de mayo de 2001." data-en="Computerized Management Information Systems, Inter American University of Puerto Rico, Ponce Campus. Degree awarded May 19, 2001.">Sistemas Computadorizados de Información Gerencial, Universidad Interamericana de Puerto Rico, Recinto de Ponce. Grado otorgado el 19 de mayo de 2001.</p><h3 data-es="Grado Asociado en Ciencias Aplicadas" data-en="Associate in Applied Science">Grado Asociado en Ciencias Aplicadas</h3><p data-es="Administración de Empresas, Universidad Interamericana de Puerto Rico, Recinto de Ponce. Grado otorgado el 19 de mayo de 2001." data-en="Business Administration, Inter American University of Puerto Rico, Ponce Campus. Degree awarded May 19, 2001.">Administración de Empresas, Universidad Interamericana de Puerto Rico, Recinto de Ponce. Grado otorgado el 19 de mayo de 2001.</p></div><div><p class="section-kicker" data-es="Preparación relevante" data-en="Relevant preparation">Preparación relevante</p><h2 data-es="Diseño instruccional y tecnología educativa" data-en="Instructional design and educational technology">Diseño instruccional y tecnología educativa</h2><p data-es="Cursos doctorales y graduados relevantes incluyen Diseño Instruccional, Investigación en Diseño y Tecnología Instruccional, Medios Instruccionales, Principios de Educación a Distancia, Análisis y Diseño de Sistemas, Principios de Tecnología Instruccional, Administración y Evaluación de Programas ITDE, Teorías del Aprendizaje, Planificación Estratégica, Métodos de Investigación y Visualización de Datos." data-en="Relevant doctoral and graduate coursework includes Instructional Design, Research in Instructional Design and Technology, Instructional Media, Principles of Distance Education, Systems Analysis and Design, Principles of Instructional Technology, Management and Evaluation of ITDE Programs, Theories of Learning, Strategic Planning, Research Methods, and Data Visualization.">Cursos doctorales y graduados relevantes incluyen Diseño Instruccional, Investigación en Diseño y Tecnología Instruccional, Medios Instruccionales, Principios de Educación a Distancia, Análisis y Diseño de Sistemas, Principios de Tecnología Instruccional, Administración y Evaluación de Programas ITDE, Teorías del Aprendizaje, Planificación Estratégica, Métodos de Investigación y Visualización de Datos.</p><p data-es="La preparación de maestría también incluyó multimedia y tecnología web, capacitación y simulación por computadora, instrucción asistida por computadora, diseño y evaluación de software educativo y educación a distancia." data-en="Master's-level preparation also included web multimedia and technology, computer training and simulation, computer-assisted instruction, educational software design and evaluation, and distance education.">La preparación de maestría también incluyó multimedia y tecnología web, capacitación y simulación por computadora, instrucción asistida por computadora, diseño y evaluación de software educativo y educación a distancia.</p><h2 data-es="Áreas de especialidad" data-en="Areas of expertise">Áreas de especialidad</h2><p data-es="Diseño instruccional, administración de LMS, desarrollo curricular, eLearning, educación en línea, capacitación de facultad, evaluación de cursos, accesibilidad digital, tecnologías inmersivas, gestión de proyectos y soporte tecnológico." data-en="Instructional design, LMS administration, curriculum development, eLearning, online education, faculty development, course evaluation, digital accessibility, immersive technologies, project management, and technical support.">Diseño instruccional, administración de LMS, desarrollo curricular, eLearning, educación en línea, capacitación de facultad, evaluación de cursos, accesibilidad digital, tecnologías inmersivas, gestión de proyectos y soporte tecnológico.</p><h2 data-es="Idiomas" data-en="Languages">Idiomas</h2><p data-es="Español: nativo. Inglés: lectura y escritura funcional en contextos académicos y técnicos; comunicación oral limitada y actualmente en desarrollo." data-en="Spanish: native. English: functional reading and writing in academic and technical contexts; limited spoken communication and currently improving.">Español: nativo. Inglés: lectura y escritura funcional en contextos académicos y técnicos; comunicación oral limitada y actualmente en desarrollo.</p></div></div>`;
-}
-const button=document.getElementById('languageToggle');
+const languageButton=document.getElementById('languageToggle');
+const menuButton=document.getElementById('menuToggle');
+const nav=document.getElementById('mainNav');
 const nodes=[...document.querySelectorAll('[data-es][data-en]')];
 let language=localStorage.getItem('portfolioLanguage')||'es';
-function applyLanguage(lang){language=lang;document.documentElement.lang=lang;nodes.forEach(el=>{el.textContent=el.dataset[lang]});button.textContent=lang==='es'?'English':'Español';button.setAttribute('aria-label',lang==='es'?'Change language to English':'Cambiar idioma a español');document.title=lang==='es'?'Eduardo A. García Rodríguez | Portafolio profesional':'Eduardo A. García Rodríguez | Professional Portfolio';localStorage.setItem('portfolioLanguage',lang)}
-button.addEventListener('click',()=>applyLanguage(language==='es'?'en':'es'));
-document.getElementById('year').textContent=new Date().getFullYear();
+
+function applyLanguage(lang){
+  language=lang;
+  document.documentElement.lang=lang;
+  nodes.forEach(el=>{el.textContent=el.dataset[lang]});
+  if(languageButton){
+    languageButton.textContent=lang==='es'?'English':'Español';
+    languageButton.setAttribute('aria-label',lang==='es'?'Change language to English':'Cambiar idioma a español');
+  }
+  document.title=lang==='es'?'Eduardo A. García Rodríguez | Portafolio profesional':'Eduardo A. García Rodríguez | Professional Portfolio';
+  localStorage.setItem('portfolioLanguage',lang);
+}
+
+function closeMenu(){
+  if(!menuButton||!nav)return;
+  nav.classList.remove('nav-open');
+  menuButton.setAttribute('aria-expanded','false');
+}
+
+if(languageButton){
+  languageButton.addEventListener('click',()=>applyLanguage(language==='es'?'en':'es'));
+}
+
+if(menuButton&&nav){
+  menuButton.addEventListener('click',()=>{
+    const isOpen=nav.classList.toggle('nav-open');
+    menuButton.setAttribute('aria-expanded',String(isOpen));
+  });
+  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});
+}
+
+const year=document.getElementById('year');
+if(year)year.textContent=new Date().getFullYear();
 applyLanguage(language);
