@@ -4,6 +4,15 @@
 
 Doctor of Education with more than 20 years of experience in higher education, instructional design, curriculum development, online education, LMS administration, faculty development, and educational technology.
 
+## Recruiter quick access
+
+**Current English ATS Resume:** [Eduardo_Garcia_CV_ATS_English.rtf](assets/Eduardo_Garcia_CV_ATS_English.rtf)  
+**Current Spanish ATS CV:** [Eduardo_Garcia_CV_ATS_Espanol.rtf](assets/Eduardo_Garcia_CV_ATS_Espanol.rtf)  
+**Professional CV / Portfolio:** https://eagarcia77.github.io/cv_website_Eduardo/  
+**CETL Portfolio:** https://eagarcia77.github.io/CTEL-SG/
+
+> The ATS files linked above are the current recruiter-ready résumé versions maintained with this portfolio.
+
 ## Professional focus
 
 My work combines instructional design with learning technologies to create practical, accessible, and learner-centered educational experiences. Areas of particular interest include **eLearning, Blackboard, Canvas, Moodle, artificial intelligence, Virtual Reality (VR), Augmented Reality (AR), WebAR, and immersive learning**.
@@ -44,16 +53,11 @@ Development of web-based tools supporting Blackboard assessment creation, questi
 
 Relevant doctoral preparation includes Instructional Design, Instructional Media, Principles of Distance Education, Systems Analysis and Design, Principles of Instructional Technology, Management and Evaluation of ITDE Programs, Theories of Learning, Strategic Planning, Research Methods, and Data Visualization.
 
-## Professional portfolio and résumé
+## Professional links
 
-**Professional CV / Portfolio:**  
-https://eagarcia77.github.io/cv_website_Eduardo/
-
-**CETL Portfolio:**  
-https://eagarcia77.github.io/CTEL-SG/
-
-**LinkedIn:**  
-https://linkedin.com/in/eduardoagarcia2814
+**LinkedIn:** https://linkedin.com/in/eduardoagarcia2814  
+**GitHub:** https://github.com/eagarcia77  
+**APA 7 Resource:** https://eagarcia77.github.io/estiloAPA/
 
 ## Languages
 
